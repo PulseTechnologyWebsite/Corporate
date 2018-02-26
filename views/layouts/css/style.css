@@ -1,0 +1,52 @@
+.nav-wrapper {
+    height: 10px !important;
+    line-height: 45px;
+    color: black !important;
+}
+
+#mnav {
+    color: #fff !important;
+}  
+
+#logo-container {
+    padding: 30px;
+}
+
+.nav-content {
+    padding: 40px;
+}
+
+.navbar-fixed {
+    position: relative;
+    height: 10px;
+    z-index: 997;
+  }
+
+
+.brand-logo {
+    z-index: 100;
+    top: 50px;
+}
+
+.row {
+    height: 45px;
+}
+
+.btn {
+    background-color: #01d4ff !important;  
+}
+
+#test1 {
+    margin-top: 70px;
+}
+
+
+nav ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1rem;
+    color: #000;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+  }
