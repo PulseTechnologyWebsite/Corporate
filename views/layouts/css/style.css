@@ -1,19 +1,19 @@
 .nav-wrapper {
-    height: 10px !important;
+    height: 250px !important;
     line-height: 45px;
     color: black !important;
 }
 
-#mnav {
-    color: #fff !important;
-}  
-
 #logo-container {
-    padding: 30px;
+    padding: 50px;
+    z-index: 2;
 }
 
 .nav-content {
     padding: 40px;
+    position: relative;
+    top: 170px;
+    z-index: 1000;
 }
 
 .navbar-fixed {
@@ -24,29 +24,92 @@
 
 
 .brand-logo {
-    z-index: 100;
+    z-index: 1;
     top: 50px;
 }
 
-.row {
-    height: 45px;
-}
-
-.btn {
+.btn, .btn-large {
     background-color: #01d4ff !important;  
 }
 
-#test1 {
-    margin-top: 70px;
+.page-footer {
+    background-color: #01d4ff !important;  
 }
 
+#slider {
+    background-color: #80e9ff !important; 
+}
+
+#stats {
+    background-color: #D3D3D3 !important;
+    width: 100%; 
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
 
 nav ul a {
-    -webkit-transition: background-color .3s;
-    transition: background-color .3s;
-    font-size: 1rem;
-    color: #000;
+    font-size: 20px;
     display: block;
     padding: 0 15px;
     cursor: pointer;
   }
+
+nav[role="main"] ul li {
+    color:#fff;
+}
+
+i {
+    color: black;
+    font-size: 50px !important;
+}
+
+.tab {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    margin: 0 auto;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+#aboutTab:hover, #careersTab:hover, #casestudiesTab:hover, #solutionsTab:hover, #servicesTab:hover, #supportTab:hover {
+    color: #01d4ff;
+    z-index: 1000;
+}
+
+#test1 {
+    top: 1000px;
+}
+
+#index-banner, #words {
+    height: 400px;
+}
+
+#image {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.whatwedo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
+#awards {
+    height: 600px;
+}
