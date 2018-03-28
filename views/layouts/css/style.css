@@ -1,115 +1,527 @@
+/*------------NAVIGATION------------*/
+
+.nav-extended {
+    height: 180px !important;
+    box-shadow: 2px 2px 18px #888888;
+    z-index: 20;
+}
+
+/*navbar1*/
 .nav-wrapper {
-    height: 250px !important;
-    line-height: 45px;
-    color: black !important;
+    height: 120px !important;
+    line-height: 20px;
+    background-color: black !important;
 }
 
-#logo-container {
-    padding: 50px;
-    z-index: 2;
-}
-
+/*navbar2*/
 .nav-content {
-    padding: 40px;
     position: relative;
-    top: 170px;
-    z-index: 1000;
+    background-color: black !important;
+    z-index: 10;
+    max-height: 50px;
+    width: 60%;
+    float: right;
 }
 
-.navbar-fixed {
-    position: relative;
-    height: 10px;
-    z-index: 997;
-  }
-
-
-.brand-logo {
-    z-index: 1;
-    top: 50px;
-}
-
-.btn, .btn-large {
-    background-color: #01d4ff !important;  
-}
-
-.page-footer {
-    background-color: #01d4ff !important;  
-}
-
-#slider {
-    background-color: #80e9ff !important; 
-}
-
-#stats {
-    background-color: #D3D3D3 !important;
-    width: 100%; 
-}
-
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-  main {
-    flex: 1 0 auto;
-  }
-
+/*navigation text*/
 nav ul a {
-    font-size: 20px;
+    font-size: 17px;
     display: block;
-    padding: 0 15px;
+    padding: 10px;
     cursor: pointer;
-  }
-
-nav[role="main"] ul li {
-    color:#fff;
+    white-space: nowrap;
 }
 
-i {
-    color: black;
-    font-size: 50px !important;
-}
-
+/*navigation tabs*/
 .tab {
     position: relative;
-    overflow-x: auto;
-    overflow-y: hidden;
     height: 40px;
     background-color: #000;
-    color: #fff;
+    color: #fff !important;
     margin: 0 auto;
     white-space: nowrap;
     cursor: pointer;
+}
+
+/*dropdown arrows*/
+i {
+    color: white;
+    font-size: 50px !important;
+}
+
+/*navbar1 tabs*/
+#aboutTab, #supportTab, #suppliesTab, #careersTab {
+    font-size: 15px !important;
+    padding: 10px !important;
+}
+
+/*navbar1 tabs hover*/
+#aboutTab:hover, #supportTab:hover, #suppliesTab:hover, #careersTab:hover {
+    color: #019cdb;
+    background-color: #808080
+}
+
+/*navbar2 tabs*/
+#itServicesTab, #printersCopiersTab, #videoDisplaysTab, #docSoftwareTab, #officeEssentialsTab, #industriesTab {
+    padding: 20px !important;
+}
+
+/*navbar2 tabs hover*/
+#itServicesTab:hover, #printersCopiersTab:hover, #videoDisplaysTab:hover, #docSoftwareTab:hover, #officeEssentialsTab:hover, #industriesTab:hover {
+    color: #019cdb;
+    background-color: #808080
+}
+
+/*dropdowns*/
+.dropdown-content {
+    background-color: #FFFFFF;
+    margin: 0;
+    display: inline-block;
+    min-width: 300px; /* Changed this to accomodate content width */
+    max-height: auto;
+    overflow-y: auto; /* Changed this from overflow-y:auto; to overflow:hidden; */
+    opacity: 0;
+    position: relative;
+    white-space: nowrap;
+    z-index: 1;
+    will-change: width, height;
   }
 
-#aboutTab:hover, #careersTab:hover, #casestudiesTab:hover, #solutionsTab:hover, #servicesTab:hover, #supportTab:hover {
-    color: #01d4ff;
-    z-index: 1000;
+/*dropdowns text*/  
+.title {
+    color: #019cdb !important;
 }
 
-#test1 {
-    top: 1000px;
+/*------------LOGO-------------*/
+#logo-container {
+    z-index: 2;
+    background-color: black !important;
+}
+.brand-logo {
+    z-index: 1;
+    top: 30px;
+    left: 40px;
 }
 
-#index-banner, #words {
-    height: 400px;
+/*------------BODY------------*/
+
+body {
+    display: block;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-#image {
-    position: relative;
+/*------------HEADER------------*/
+
+/*header container*/
+#index-banner {
     height: auto;
     width: 100%;
+    position: relative;
+    z-index: 0;
 }
 
-.whatwedo {
+/*header image*/
+#tagline-image {
+    width: 100%;
+    height: auto;
+}
+
+/*header logo*/
+.header-logo {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 60px;
 }
 
+/*header text*/
+.tagline {
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    width: 100%;
+}
+
+/*header button*/
+#tagline-btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+} 
+#tagline-btn:hover {
+    background-color:rgba(0, 0, 0, 0.7) !important;
+}
+.btn, .btn-large {
+    background-color: #000000 !important;  
+}
+
+
+/*Animation*/
+.animation {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+}      
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/*------------ SECTION 1 --------*/
+
+#row2 {
+    margin-top: -50px;
+}
+
+#s1left {
+    background-color: black;
+    height: 900px;
+    margin-top: -7px;
+    color: white;
+    font-size: 30px !important;
+}
+
+#s1left-text {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 35%;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.card {
+    padding: 20px;
+    height: 420px !important;
+}
+
+.card-title {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 5px;
+    width: 100%;
+    top: 60%;
+    text-align: center;
+    display: inline-block;
+    line-height: 5px;
+}
+
+.card-content {
+    margin-top: -20px;
+    overflow: inherit !important;
+    padding: 15px !important;
+}
+
+#title2 {
+    color: black !important;
+    opacity: 1.0 !important;
+}
+
+#title2:hover {
+    color: #019cdb !important;
+}
+
+#learnmore {
+    color: black !important;
+    background-color: #019cdb !important;
+    width: 100%
+}
+
+#learnmore:hover {
+    opacity: 0.7;
+}
+
+.doc-software {
+    font-size: 22px;
+}
+
+
+/*------------SLIDER------------*/
+
+/*slider container*/
+#slider {
+    background-color: #019cdb !important;
+    height: 280px;
+    margin-bottom: 6px;
+    margin-top: -10px;
+}
+
+#icon {
+    width: 200px !important;
+}
+
+/*jQuery carousel*/
+#slider.carousel {
+    perspective: 1000px !important;
+    height: 210px !important;
+}
+
+/*------------ SECTION 2 - SERVICE AT PULSE ------------*/
+#s2left.col.s6 {
+    padding: 0 !important;
+}
+
+#s2right {
+    background-color: black;
+    height: 667px;
+    margin-top: -33px;
+    color: white;
+    font-size: 30px !important;
+    position: relative;
+    z-index: 10;
+}
+
+#s2right-text {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15%;
+    font-family: 'Catamaran', sans-serif;
+}
+
+#service-img {
+    margin-top: -32px;
+    margin-right: -50px;
+    width: 1000px;
+    z-index: 0;
+    position: absolute;
+}
+
+#service1 {
+    margin-left: 2%;
+    margin-right: 3%;
+    font-size: 20px;
+}
+
+/*------------SECTION 4 - LOCATIONS ------------*/
+#section5 {
+    background-color: #D3D3D3;
+    padding: 0;
+    margin-top: -25px;
+    height: 800px;
+}
+
+#IL-IN {
+    margin-top: 35%;
+}
+
+#locations {
+    margin-top: 5%;
+    padding: 50px;
+    padding-left: 70px;
+    font-size: 23px;
+    border: solid;
+    border-width: 10px;
+}
+
+
+
+/*------------SECTION 2 - TESTIMONIALS------------*/
+/*section 2 container*/
+#testimonials {
+    width: 90%;
+    height: 300px !important;
+    background-color: white !important;
+    margin-top:-15px;
+    border: solid;
+    border-color: #019cdb;
+    border-width: 10px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+#testimonials.carousel {
+    perspective: 1000px !important;
+    height: 400px !important;
+}
+.carousel .carousel-item {
+    display: none;
+    width: 70% !important;
+    height: 200px;
+    position: absolute;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*------------SECTION 4 - STATISTICS------------*/
+
+/*section 3 container*/
+#stats {
+    background-color: #D3D3D3 !important;
+    width: 100%; 
+    height: 300px;
+}
+
+.wrapper {
+  text-align: center;
+}
+.wrapper .square {
+    width: 150px; 
+    height: 120px;  
+    background-color: #019cdb; 
+    color: white; 
+    font-weight: 700; 
+    font-size: 70px;
+    border-radius: 25px; 
+    text-align: center;  
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.counter {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*------------SECTION 4 - AWARDS------------*/
+
+/*section 4 container*/
 #awards {
     height: 600px;
 }
+
+/*------------FOOTER------------*/
+.page-footer {
+    background-color: #019cdb !important;  
+}
+
+/*------------SECTION 1 OLD ----------*/
+
+/*section 1 container*/
+/* #whatwedo {
+    font-size: 60px;
+    margin-top: -20px;
+} */
+
+/*section1 row*/
+/* #section1 {
+    width: 100%;
+    height: 1000px;
+} */
+
+/*list bullet points*/
+/* li {
+    list-style-type: circle;
+} */
+
+/*bio*/
+/* .bio-box {
+    background-color: black;
+    border: solid;
+    border-color: #019cdb;
+    border-width: 10px;
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 3%;
+    color: white;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#bio {
+    font-size: 24px;
+} */
+
+/*-----SOLUTIONS-----*/
+/*solutions box*/
+/* .solutions {
+    float: left;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 20px;
+    padding-left: 30px;
+    width: 100%;
+    font-size: 20px;
+    clear: both;
+} */
+/*monitors image*/
+/* #monitors {
+    float: left;
+    margin-bottom: -20px;
+} */
+/*solutions text*/
+/* #solutions-list {
+    padding-left: 100px;
+} */
+/*solutions blue line*/
+/* .sol-title:after {
+    background-color: #019cdb;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 65%;
+    margin-left: 5px;
+  } */
+
+/*-----SERVICES-----*/
+/*pulse black image*/
+/* #pulseblack {
+    margin-bottom: -40px;
+    margin-top: 25%;
+} */
+/*services box*/
+/* .services {
+    float: right;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 20px;
+    padding-left: 30px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 15px;
+
+} */
+/*services text*/
+/* #services-list {
+    padding-left: 100px;
+} */
+/*services blue line*/
+/* .ser-title:after {
+    background-color: #019cdb;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 65%;
+    margin-left: 5px;
+  } */
+
+/* #IL-IN {
+    float: right;
+    margin-left: 100px;
+} */

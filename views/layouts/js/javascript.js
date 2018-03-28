@@ -1,18 +1,50 @@
 $(document).ready(function(){
-	$('#carousel').carousel({fullWidth: true});
-});
 
-var slideIndex = 0;
-carousel2();
+$('.dropdown-button').dropdown({
+    inDuration: 300,
+    outDuration: 225,
+    constrainWidth: true,
+    hover: true, // Activate on hover
+    belowOrigin: true, // Displays dropdown below the button
+    alignment: 'right', // Displays dropdown with edge aligned to the left of button
+    gutter: 0
+  });
 
-function carousel2() {
-    var j;
-    var z = document.getElementsByClassName("slide2");
-    for (j = 0; j < z.length; j++) {
-      z[j].style.display = "none"; 
+$('#slider').carousel({
+    fullWidth: false,
+    padding: 400,
+    noWrap: false,
+    dist: 20,
+  });
+  setInterval(function(){
+    $('#slider').carousel('next');
+  }, 2000);
+
+$('#testimonials').carousel({
+    fullWidth: false,
+    padding: 2000,
+    noWrap: false,
+    dist: 20,
+  });
+  setInterval(function(){
+    $('#testimonials').carousel('next');
+  }, 20000);
+
+  var stats_counter = function() {
+    if($('.counter').length > 0) { 
+      function increment($this, speed){
+        var current = parseInt($this.html(), 10);
+        $this.html(++current);
+        if(current !== $this.data('to')){
+          setTimeout(function(){increment($this, speed)}, speed);
+        }
+      }  
+      $('.counter').each(function(index) {
+        increment($(this), parseInt($(this).data('speed')));
+      });
     }
-    slideIndex++;
-    if (slideIndex > z.length) {slideIndex = 1} 
-    z[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel2, 10000); 
-}
+  }
+
+stats_counter();
+
+});
