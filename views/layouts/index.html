@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+<!-- MATERIALIZE -->
+    <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- JavaScript for: jQuery, angular, materialize, and angular-materialize. All of which are needed. -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
+    <!-- jquery ui -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- materialize icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran|Oswald" rel="stylesheet">
+    <!-- Title -->        
+        <title>PULSE Technology</title>
+    <!-- internal js -->
+        <script type="text/javascript" src="js/javascript.js"></script>
+ 
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav-extended black">
+    <div class="nav-wrapper">
+        <!-- Logo -->
+        <a id="logo-container" href="index.html" class="brand-logo">
+            <img src="assets/Logo.png" height="90px" width="290px">
+        </a>
+
+        <!-- Side Menu -->
+        <a href="#" data-activates="nav-mobile" class="button-collapse large">
+            <i class="large material-icons">menu</i>
+        </a>
+    
+    <!-- Navbar 1 -->   
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="about.html" id="aboutTab">About</a></li>
+        <li><a href="support.html" id="supportTab">Support</a></li>
+        <li><a href="http://www.ecinteractiveplus.com/3185/" id="suppliesTab">Order Supplies</a></li>
+        <li><a href="https://www.glassdoor.com/Jobs/Des-Plaines-Office-Equipment-Jobs-E505818.htm" id="careersTab">Careers</a></li>
+      </ul>
+    <!-- Navbar 1 Mobile -->  
+      <ul class="side-nav" id="mobile-demo">
+        <li><a class="tabs tabs-transparent" id="aboutTab" href="about.html">About</a></li>
+        <li><a class="tabs tabs-transparent" id="supportTab" href="support.html">Support</a></li>
+        <li><a class="tabs tabs-transparent" id="suppliesTab" href="http://www.ecinteractiveplus.com/3185/">Order Supplies</a></li>
+        <li><a class="tabs tabs-transparent" id="careersTab" href="https://www.glassdoor.com/Jobs/Des-Plaines-Office-Equipment-Jobs-E505818.htm">Careers</a></li>
+      </ul>
+    </div>
+
+    <!-- Navbar 2 -->
+        <div class="nav-content">
+            <ul class="right hide-on-med-and-down">
+                <!-- Dropdown Trigger -->
+						<li><a class="dropdown-button" href="itServices.html" data-activates="dropdown" data-beloworigin="true" id="itServicesTab">IT Services</a></li>
+                <!-- Dropdown Trigger -->
+                        <li><a class="dropdown-button" href="printersCopiers.html" data-activates="dropdown1" data-beloworigin="true" id="printersCopiersTab">Printers/Copiers</a></li>
+                <!-- Dropdown Trigger -->
+                        <li><a class="dropdown-button" href="videoDisplays.html" data-activates="dropdown2" data-beloworigin="true" id="videoDisplaysTab">Video Displays</a></a></li>
+                <!-- Dropdown Trigger -->
+                        <li><a class="dropdown-button" href="docSoftware.html" data-activates="dropdown3" data-beloworigin="true" id="docSoftwareTab">Document Software</a></li>                        
+                <!-- Dropdown Trigger -->
+						<li><a class="dropdown-button" href="officeEssentials.html" data-activates="dropdown4" data-beloworigin="true" id="officeEssentialsTab">Office Essentials</a></li>
+                <!-- Dropdown Trigger -->
+                        <li><a class="dropdown-button" href="industries.html" data-activates="dropdown5" data-beloworigin="true" id="industriesTab">Industries</a></li>
+            </ul>
+        </div>
+    <!-- Navbar 2 Mobile -->
+  
+</nav>
+
+<!-- Dropdown Structure -->
+    <!-- IT Services Dropdown -->
+    <ul id="dropdown" class="dropdown-content collection">
+        <li><a href="page.html" class="title">Virtual CIO</a></li>
+        <li><a href="page.html" class="title">Backup & Recovery Services</a></li>
+        <li><a href="page.html" class="title">Managed Network Services</a></li>
+        <li><a href="page.html" class="title">Managed Antivirus</a></li>
+        <li><a href="page.html" class="title">Phone Systems</a></li>
+        <li><a href="page.html" class="title">IT Support</a></li>
+    </ul>
+    <!-- Printers/Copiers Dropdown -->
+    <ul id="dropdown1" class="dropdown-content collection">
+        <li><a href="page.html" class="title">Multifunction Printers</a></li>
+        <li><a href="page.html" class="title">Desktop Printers</a></li>
+        <li><a href="page.html" class="title">Production Print</a></li>
+        <li><a href="page.html" class="title">Managed Print Services</a></li>
+        <li><a href="page.html" class="title">Business Applications</a></li>
+    </ul>
+    <!-- Video Displays Dropdown -->
+    <ul id="dropdown2" class="dropdown-content collection">
+        <li><a href="page.html" class="title">Video Walls</a></li>
+        <li><a href="page.html" class="title">Interactive Touch Displays</a></li>
+    </ul>
+    <!-- Document Software Dropdown -->
+    <ul id="dropdown3" class="dropdown-content collection">
+        <li><a href="page.html" class="title">Digital Storage & Retreival</a></li>
+        <li><a href="page.html" class="title">Workflow Management</a></li>
+    </ul>
+    <!-- Office Essentials Dropdown -->
+    <ul id="dropdown4" class="dropdown-content collection">
+        <li><a href="page.html" class="title">Office Furniture</a></li>
+        <li><a href="page.html" class="title">Supplies</a></li>
+        <li><a href="page.html" class="title">Professional Air Purifiers</a></li>
+        <li><a href="page.html" class="title">Water Coolers</a></li>
+    </ul>
+    <!-- Industries Dropdown -->
+    <ul id="dropdown5" class="dropdown-content collection">
+        <li><a href="page.html" class="title">Legal</a></li>
+        <li><a href="page.html" class="title">Education</a></li>
+        <li><a href="page.html" class="title">Healthcare</a></li>
+        <li><a href="page.html" class="title">Manufacturing/Distribution</a></li>
+        <li><a href="page.html" class="title">Finance</a></li>
+        <li><a href="page.html" class="title">Engineering/Design</a></li>
+        <li><a href="page.html" class="title">Government Services</a></li>
+    </ul>
+
+<!-- BODY -->
+
+  <!-- Banner 1 Header -->
+    <div id="index-banner">
+              <img src="assets/background13.jpeg" id="tagline-img" width="100%" height="auto">
+              <img src="assets/logo.png" height="400px" width="1300px" class="header-logo">
+           
+           <!-- PULSE Animation -->
+       <span>
+           <svg class="animation" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1213 151.94">
+                <path class="path" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M1.93,350.09c2.07-.07,4.14-.19,6.2-.19l766.63,0c13.32,0,26.64-.07,40,.1,2.89,0,4.08-1,5-3.65,6.1-18.68,12.37-37.31,18.58-55.95,1.92-5.75,4.85-8.23,9.26-7.88,4.18.34,6.87,3.16,7.92,8.73q9.18,48.81,18.28,97.64c.27,1.44.6,2.86,1,4.83,2-2.49,2.48-5.07,3.37-7.42q12.36-32.53,24.59-65.11c1.54-4.09,3.59-7.58,8.62-7.63,4.44,0,7.26,2.51,9,8.26,4.7,15.25,9.31,30.53,14,45.77.41,1.34.3,3,2,4.14,5.17-5.62,10.47-11.15,15.49-16.93,3-3.53,6.53-4.95,11.23-4.94q125.4.14,250.81,0v1.78a20.94,20.94,0,0,0,0,13.32v1.77q-123.21,0-246.41-.1a7.69,7.69,0,0,0-6.4,3q-10.74,12.11-21.77,24c-6.39,6.91-13.54,5.22-16.22-3.81-3.5-11.76-6.87-23.55-10.31-35.32-.49-1.68-1-3.34-1.89-6-4.59,12.16-8.81,23.37-13,34.57q-8.29,22-16.59,44c-2.11,5.58-5.07,7.78-9.66,7.38-4.2-.36-6.82-3.07-7.91-8.79q-9.26-48.81-18.39-97.64c-.08-.41-.22-.81-.32-1.21-1.72-.15-1.41,1.29-1.69,2.12-3.45,10.22-6.83,20.46-10.26,30.69-1.85,5.5-4.36,7.26-10.18,7.26l-816.5-.07c-1.48,0-2.95-.12-4.43-.19Z" transform="translate(-0.89 -282.46)" style="fill:#039cda"/>
+                <path class="path" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M1.93,350.09v16.43l-1,.22V349.87Z" transform="translate(-0.89 -282.46)" style="fill:#7ecceb"/>
+                <path class="path" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M1213.89,365a20.94,20.94,0,0,1,0-13.32Z" transform="translate(-0.89 -282.46)" style="fill:#2eace0"/>
+           </svg> 
+        </span>
+           
+          <!-- Action Button --> 
+           <a class="waves-effect waves-light btn-large" id="tagline-btn">KICKSTART THE HEART OF YOUR BUSINESS</a>
+    </div>
+
+    <!-- Company Logo Slider -->
+    <div id="slider">
+        <div class="carousel">
+            <a class="carousel-item" href="#one!" id="icon"><img src="assets/client1.jpg"></a>
+            <a class="carousel-item" href="#four!" id="icon"><img src="assets/client4.png"></a>
+            <a class="carousel-item" href="#five!" id="icon"><img src="assets/client5.png"></a>
+            <a class="carousel-item" href="#five!" id="icon"><img src="assets/client6.png"></a>
+            <a class="carousel-item" href="#three!" id="icon"><img src="assets/client3.png"></a>        
+            <a class="carousel-item" href="#five!" id="icon"><img src="assets/client7.png"></a> 
+            <a class="carousel-item" href="#two!" id="icon"><img src="assets/client2.jpg"></a>       
+            <a class="carousel-item" href="#five!" id="icon"><img src="assets/client8.png"></a>
+        </div>
+    </div>
+
+    <!-- SECTION 1 - WHAT WE DO LEFT -->
+    <div class="row">
+        <div class="col s6" id="s1left">
+            <p id="s1left-text">Whether you are looking for an outside source to partner with your IT team or a company that will do it all – from software to hardware to office essentials, Pulse Technology will manage all your office needs to create a more efficient and productive workplace.</p>
+        </div>
+    <!-- SECTION 1 - WHAT WE DO RIGHT -->
+        <div class="col s6" id="s1right">
+                <!-- ROW 1 -->
+                <div class="row">
+                    <!-- IT SERVICES CARD -->
+                    <div class="col s4">
+                        <div class="card medium hoverable">
+                            <div class="card-image">
+                                <img src="assets/itservices.jpeg">
+                                <span class="card-title"><a href="itServices.html" class="white-text"><b>IT Services</b></a></span>
+                            </div>
+                            <div class="card-content">
+                                <ul class="card2">
+                                    <li><a href="page.html" id="title2">Virtual CIO</a></li>
+                                    <li><a href="page.html" id="title2">Backup & Recovery Services</a></li>
+                                    <li><a href="page.html" id="title2">Managed Network Services</a></li>
+                                    <li><a href="page.html" id="title2">Managed Antivirus</a></li>
+                                    <li><a href="page.html" id="title2">Phone Systems</a></li>
+                                    <li><a href="page.html" id="title2">IT Support</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-action">
+                              <a href="#" class="waves-effect waves-light btn" id="learnmore">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRINTERS/COPIERS CARD -->
+                    <div class="col s4">
+                        <div class="card medium hoverable">
+                            <div class="card-image">
+                                <img src="assets/itservices.jpeg">
+                                <span class="card-title"><a href="printersCopiers.html" class="white-text"><b>Printers/Copiers</b></a></span>
+                            </div>
+                            <div class="card-content">
+                                <ul class="card2">
+                                    <li><a href="page.html" id="title2">Multifunction Printers</a></li>
+                                    <li><a href="page.html" id="title2">Desktop Printers</a></li>
+                                    <li><a href="page.html" id="title2">Production Print</a></li>
+                                    <li><a href="page.html" id="title2">Managed Print Services</a></li>
+                                    <li><a href="page.html" id="title2">Business Applications</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="waves-effect waves-light btn" id="learnmore">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VIDEO DISPLAYS CARD -->
+                    <div class="col s4">
+                        <div class="card medium hoverable">
+                            <div class="card-image">
+                                <img src="assets/itservices.jpeg">
+                                <span class="card-title"><a href="videoDisplays.html" class="white-text"><b>Video Displays</b></a></span>
+                            </div>
+                            <div class="card-content">
+                                <ul class="card2">
+                                    <li><a href="page.html" id="title2">Video Walls</a></li>
+                                    <li><a href="page.html" id="title2">Interactive Touch Displays</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="waves-effect waves-light btn" id="learnmore">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 2 -->
+                <div class="row" id="row2">
+                    <!-- DOCUMENT SOFTWARE CARD -->
+                    <div class="col s4">          
+                        <div class="card medium hoverable">
+                            <div class="card-image">
+                                <img src="assets/itservices.jpeg">
+                                <span class="card-title"><a href="docSoftware.html" class="white-text"><b class="doc-software">Document Software</b></a></span>
+                            </div>
+                            <div class="card-content">
+                                <ul class="card2">
+                                    <li><a href="page.html" id="title2">Digital Storage & Retreival</a></li>
+                                    <li><a href="page.html" id="title2">Workflow Management</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="waves-effect waves-light btn" id="learnmore">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- OFFICE ESSENTIALS CARD -->
+                    <div class="col s4">
+                        <div class="card medium hoverable">
+                            <div class="card-image">
+                                <img src="assets/itservices.jpeg">
+                                <span class="card-title"><a href="officeEssentials.html" class="white-text"><b>Office Essentials</b></a></span>
+                            </div>
+                            <div class="card-content">
+                                <ul class="card2">
+                                    <li><a href="page.html" id="title2">Office Furniture</a></li>
+                                    <li><a href="page.html" id="title2">Supplies</a></li>
+                                    <li><a href="page.html" id="title2">Professional Air Purifiers</a></li>
+                                    <li><a href="page.html" id="title2">Water Coolers</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="waves-effect waves-light btn" id="learnmore">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- INDUSTRIES CARD -->
+                    <div class="col s4">
+                        <div class="card medium hoverable">
+                            <div class="card-image">
+                                <img src="assets/itservices.jpeg">
+                                <span class="card-title"><a href="industries.html" class="white-text"><b>Industries</b></a></span>
+                            </div>
+                            <div class="card-content">
+                                <ul class="card2">
+                                    <li><a href="page.html" id="title2">Legal</a></li>
+                                    <li><a href="page.html" id="title2">Education</a></li>
+                                    <li><a href="page.html" id="title2">Healthcare</a></li>
+                                    <li><a href="page.html" id="title2">Manufacturing/Distribution</a></li>
+                                    <li><a href="page.html" id="title2">Finance</a></li>
+                                    <li><a href="page.html" id="title2">Engineering/Design</a></li>
+                                    <li><a href="page.html" id="title2">Government Services</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="waves-effect waves-light btn" id="learnmore">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+<!-- SECTION 3 - SERVICE AT PULSE -->
+    <div class="row" id="section2">
+        <!-- SECTION 2 - LEFT -->
+        <div class="col s6" id="s2left">
+            <div class="row" id="section4">
+                <img src="assets/service.jpeg" height="auto" width="100%" id="service-img">
+            </div>        
+        </div>
+        <!-- SECTION 2 - RIGHT -->
+        <div class="col s6" id="s2right">
+            <div id="s2right-text">
+            <h2><b>Service at PULSE Technology</b></h2>    
+            <p>With qualified technicians to support and service your equipment we are proud of our approach to service. Each technician receives an average of four weeks manufacturer's training to keep up with new technology and stocking over one million dollars in parts and supplies, "Proactive not Reactive" is our service creed.
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!-- SECTION 4 - LOCATIONS -->
+
+    <div class="row" id="section5">
+        <div class="container">
+            <div class="col s4">
+                <img src="assets/IL-IN1.png" id="IL-IN" height="auto" width="450px">
+            </div>
+
+            <div class="col s8" id="locations">
+                <h2><b>Locations</b></h2>
+                    <div class="row">
+                        <div class="col s6">
+                        <h4><b>Carol Stream, IL</b></h4>
+                                <p>262 Carlton Drive
+                                <br>Carol Stream, IL 60188
+                                <br>(847) 879-6400
+                                </p>
+                        <h4><b>Chicago, IL</b></h4>
+                                <p>211 West Wacker Drive
+                                <br>Chicago, IL 60606
+                                <br>(312) 896-1000
+                                </p>
+                        </div>
+                        <div class="col s6">
+                        <h4><b>Rockford, IL</b></h4>
+                                <p>1445 Windsor Road
+                                <br>Loves Park, IL 61111
+                                <br>(815) 654-0200
+                                </p>
+
+                        <h4><b>Chesterton, IN</b></h4>
+                                <p>312 Roberts Road
+                                <br>Chesterton, IN 46304
+                                <br>(219) 926-1171
+                                </p>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SECTION 4 - Testimonial Slider
+    <div id="testimonials">
+            <div class="carousel" data-indicators="true" width="100%">
+                <a class="carousel-item black-text" href="#one!">
+                    <p>"PULSE Technology has made my business much more efficient! I love working with them!"</p>
+                    <h4>-Name1</h4>
+                </a>
+                <a class="carousel-item black-text" href="#two!">
+                    <h2><i>"  "</i></h2>
+                    <h4>-Name2</h4>
+                </a>
+                <a class="carousel-item black-text" href="#three!">
+                    <h2><i>"  "</i></h2>
+                    <h4>-Name3</h4>
+                </a>
+                <a class="carousel-item black-text" href="#four!">
+                    <h2><i>"  "</i></h2>
+                    <h4>-Name4</h4>
+                </a>
+                <a class="carousel-item black-text" href="#five!">
+                    <h2><i>"  "</i></h2>
+                    <h4>-Name5</h4>
+                </a>        
+                <a class="carousel-item black-text" href="#six!">
+                    <h2><i>"  "</i></h2>
+                    <h4>-Name6</h4>
+                </a> 
+                <a class="carousel-item black-text" href="#seven!">
+                    <h2><i>"  "</i></h2>
+                    <h4>-Name7</h4>
+                </a>       
+                <a class="carousel-item black-text" href="#eight!">
+                    <h2><i>"  "</i></h2>
+                    <h4>-Name8</h4>
+                </a>
+            </div>
+        </div>-->
+  
+  
+<!-- SECTION 4 - Awards -->
+  <div class="valign-wrapper.center-align" id="awards">
+    <h1 class="header center"><b>Awards</b></h1>
+    <div class="center"><img src="assets/Picture2.png" height="400px" width="400px"></div>
+</div>
+
+
+
+    <!-- SECTION 5 - Statistics--> 
+    <div class="row" id="stats">
+        <div class="col s4">
+            <h1 class="center">Locations</h1>
+              <div class="wrapper">
+                    <div class="square">
+                      <div class="counter" data-to="4" data-speed="350">0</div>
+                    </div>
+                </div>
+        </div>
+            
+    <div class="col s4">
+            <h1 class="center">Service Technicians</h1>
+               <div class="wrapper">
+                    <div class="square">
+                        <div class="counter" data-to="20" data-speed="50">0</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="col s4">
+            <h1 class="center">Years of Experience</h1>
+                <div class="wrapper">
+                    <div class="square">
+                        <div class="counter" data-to="195" data-speed="16">0</div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+<!-- FOOTER -->
+
+<footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Pulse Technology</h5>
+              <p class="grey-text text-lighten-4">Kickstart the heart of your business!</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Menu</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">IT Services</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Printers/Copiers</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Video Displays</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Document Software</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Office Essentials</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Industries</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2018 Pulse Technology
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+
+	</body>
+
+</html>
+
+    <!-- SECTION 1 - What We Do -->
+<!--<div class="row" id="section1">
+    <div class="container" id="whatwedo">
+        <div class="row">
+            <div class="bio-box">
+                <p id="bio">Whether you are looking for an outside source to partner with your IT team or a company that will do it all – from software to hardware to office essentials, Pulse Technology will manage all your office needs to create a more efficient and productive workplace.  
+            </p>
+            </div>
+        </div>
+
+        <div class="col s6">
+            <img src="assets/monitors.png" height="auto" width="100%" id="monitors">
+            <div class="solutions">
+            <span><h3 class="sol-title"><b>Solutions</b></h3>
+            </span>
+                <span><ul id="solutions-list">
+                    <li style="list-style-type:square">Imaging Systems</li>
+                    <li style="list-style-type:square">Custom Video Walls</li>
+                    <li style="list-style-type:square">Interactive Displays</li>
+                    <li style="list-style-type:square">Digital Doucment Storage & Retrieval</li>
+                    <li style="list-style-type:square">Computers & Software</li>
+                    <li style="list-style-type:square">Data Protection & Security</li>
+                    <li style="list-style-type:square">Office Furniture & Supplies</li>
+                </ul></span>
+            </div>
+        </div>
+
+        <div class="col s6">
+            <img src="assets/PULSEblack.png" height="auto" width="93%" id="pulseblack">
+
+            <div class="services">
+            <span><h3 class="ser-title"><b>Services</b></h3></span>
+                <span><ul id="services-list">
+                    <li style="list-style-type:square">Managed IT Services</li>
+                    <li style="list-style-type:square">Virtual CIO</li>
+                    <li style="list-style-type:square">Managed Print Services</li>
+                    <li style="list-style-type:square">Document Management</li>
+                    <li style="list-style-type:square">Backup & Recovery Services</li>
+                    <li style="list-style-type:square">Technology Destruction</li>
+                </ul></span>
+            </div>
+        </div>
+
+            <img src="assets/IL-IN1.png" height="400px" width="370px" id="IL-IN">
+    </div>
+</div>-->

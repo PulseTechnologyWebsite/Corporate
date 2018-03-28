@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+<!-- MATERIALIZE -->
+    <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- JavaScript for: jQuery, angular, materialize, and angular-materialize. All of which are needed. -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
+    <!-- jquery ui -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- materialize icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Title -->        
+        <title>PULSE Technology</title>
+    <!-- internal js -->
+        <script type="text/javascript" src="js/javascript.js"></script>
+</head>
+
+<body ng-app="materializeApp" ng-controller="BodyController">
+
+<!-- NAVIGATION -->
+    
+<!-- Navigation Bar 1 -->
+  <nav class="white" role="sub">
+
+    <!-- Logo -->
+        <a id="logo-container" href="index.html" class="brand-logo">
+            <img src="assets/Logo.png" height="150px" width="420px">
+        </a>
+
+     <!-- Support Navbar -->   
+        <ul id="nav-mobile" class="right hide-on-med-and-down white">
+            <li><a class="waves-effect waves-light btn hoverable" href="support.html">Service Call</a></li>
+            <li><a class="waves-effect waves-light btn hoverable" href="support.html">Order Supplies</a></li>
+            <li><a class="waves-effect waves-light btn hoverable" href="support.html">Sales</a></li>
+        </ul>
+      <!-- Support Navbar Mobile View -->
+       <ul id="nav-mobile" class="side-nav">
+            <li><a class="waves-effect waves-light btn hoverable" href="support.html">Service Call</a></li>
+            <li><a class="waves-effect waves-light btn hoverable" href="support.html">Order Supplies</a></li>
+            <li><a class="waves-effect waves-light btn hoverable" href="support.html">Sales</a></li>
+        </ul>
+      <!-- Menu Dropdown -->
+      <a href="#nav-mobile" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="large material-icons">menu</i></a>
+  </nav>
+
+<!-- Navigation Bar 2 -->
+    <nav class="nav-extended black" role="main">
+        <div class="nav-wrapper" id="nav2">
+
+        <!-- Main Navbar -->    
+            <div class="row">
+                <div class="nav-content black">
+                    <ul class="right hide-on-med-and-down">
+                        <li class="tab"><a href="about.html" id="aboutTab">About</a></li>
+                        <li class="tab"><a href="careers.html" id="careersTab">Careers</a></li>
+                        <li class="tab"><a href="casestudies.html" id="casestudiesTab">Case Studies</a></li>
+                        <li class="tab"><a href="solutions.html" id="solutionsTab">Solutions</a></li>
+                        <li class="tab"><a href="services.html" id="servicesTab">Services</a></li>
+                        <li class="tab"><a href="support.html" id="supportTab">Support</a></li>     
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- HEADER #1 -->
+
+  <!-- Banner 1 Header -->
+  <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br>
+            <h1 class="header center"><b>Case Studies Page</b></h1>
+        <div class="row center">
+            <h5 class="header col s12 black-text">Tagline.</h5>
+        <a class="waves-effect waves-light btn-large hoverable" href="support.html">BUTTON</a>
+
+        </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Image -->
+    <div class="parallax" id="image">
+        <img src="assets/background1.jpeg" height="auto" width="100%">
+    </div>
+
+<!-- BODY -->
+    <div id="words">
+        <h1 class="header center">PULSE Technology</h1>
+    </div>
+
+<!-- FOOTER -->
+
+<footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">Footer Content Stuff.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2018 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+
+	</body>
+
+</html>
