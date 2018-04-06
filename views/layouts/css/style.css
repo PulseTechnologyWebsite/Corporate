@@ -4,19 +4,20 @@
     height: 180px !important;
     box-shadow: 2px 2px 18px #888888;
     z-index: 20;
+    background-color: #F8F8F8 !important;
 }
 
 /*navbar1*/
 .nav-wrapper {
     height: 120px !important;
     line-height: 20px;
-    background-color: black !important;
+    background-color: #F8F8F8 !important;
 }
 
 /*navbar2*/
 .nav-content {
     position: relative;
-    background-color: black !important;
+    background-color: #F8F8F8 !important;
     z-index: 10;
     max-height: 50px;
     width: 60%;
@@ -30,14 +31,16 @@ nav ul a {
     padding: 10px;
     cursor: pointer;
     white-space: nowrap;
+    color: black;
+    font-weight: bold;
 }
 
 /*navigation tabs*/
 .tab {
     position: relative;
     height: 40px;
-    background-color: #000;
-    color: #fff !important;
+    background-color: #F8F8F8;
+    color: black !important;
     margin: 0 auto;
     white-space: nowrap;
     cursor: pointer;
@@ -45,7 +48,7 @@ nav ul a {
 
 /*dropdown arrows*/
 i {
-    color: white;
+    color: black;
     font-size: 50px !important;
 }
 
@@ -95,7 +98,7 @@ i {
 /*------------LOGO-------------*/
 #logo-container {
     z-index: 2;
-    background-color: black !important;
+    background-color: #F8F8F8 !important;
 }
 .brand-logo {
     z-index: 1;
@@ -173,7 +176,7 @@ body {
 /*Animation*/
 .animation {
     position: absolute;
-    top: 70%;
+    top: 76%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 60px;
@@ -262,7 +265,7 @@ body {
 
 /*slider container*/
 #slider {
-    background-color: #019cdb !important;
+    background-color: #C0C0C0 !important;
     height: 280px;
     margin-bottom: 6px;
     margin-top: -10px;
@@ -319,20 +322,21 @@ body {
     background-color: #D3D3D3;
     padding: 0;
     margin-top: -25px;
-    height: 800px;
+    height: 700px;
 }
 
 #IL-IN {
     margin-top: 35%;
+    padding: 20px;
 }
 
 #locations {
     margin-top: 5%;
-    padding: 50px;
+    padding: 20px;
     padding-left: 70px;
     font-size: 23px;
     border: solid;
-    border-width: 10px;
+    border-width: 7px;
 }
 
 
@@ -397,16 +401,73 @@ body {
     vertical-align: middle;
 }
 
+.center {
+    color: black;
+}
+
+/*------------SECTION 4 - Joint Venture------------*/
+#history {
+    height: 800px;
+}
+
+.venture {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#venture {
+    margin-top: 5%;
+}
+
+#DPOE {
+    padding: 10px;
+    margin-top: 10%;
+}
+
+#mcshanes {
+    margin-top: 30%;
+}
+
+#KL {
+    padding: 10px;
+    margin-top: 20%;
+}
+
+hr { 
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-width: 3px;
+    border-color: black;
+}
+
+#DPOE1 {
+    padding: 10px;
+}
+
+#mcshanes1 {
+    margin-top: 15%;
+}
+
+#KL1 {
+    padding: 10px;
+    margin-top: 1%;
+}
+
+
 /*------------SECTION 4 - AWARDS------------*/
 
-/*section 4 container*/
+/*section 4 container
 #awards {
     height: 600px;
-}
+}*/
 
 /*------------FOOTER------------*/
 .page-footer {
-    background-color: #019cdb !important;  
+    background-color: #019cdb !important;
+    margin-top: -2%;  
 }
 
 /*------------SECTION 1 OLD ----------*/
